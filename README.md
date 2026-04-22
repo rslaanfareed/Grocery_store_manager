@@ -1,70 +1,78 @@
-Grocery Store Management System (C++)
+# Grocery Store Manager
 
-A console-based grocery store inventory and billing system built in C++.
-This program allows managing store items, updating stock, and calculating customer bills with data saved between runs.
+A console-based grocery store management system built in C++. Handles inventory, billing, and persistent data storage — all from the terminal.
 
-Overview
-This project simulates a small grocery store management system. It keeps track of items, their prices, and quantities. The inventory is stored in a file so data is not lost when the program closes.
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Platform](https://img.shields.io/badge/Platform-Terminal-black?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Complete-00c853?style=for-the-badge)
 
-⚙️ Features
-Add new grocery items
-Automatically update item if it already exists
-Display formatted inventory table
-Update item price and quantity
-Delete items from inventory
-Run a sale and calculate total bill
-Reduces stock after purchase
-Data persistence using file handling
+---
 
-💾 Data Storage
+## Overview
 
-Inventory is saved in:
-inventory.txt
-This file stores:
-Item name
-Item price
-Item quantity
-The file is loaded automatically when the program starts.
+This project simulates a real grocery store backend. It tracks items, prices, and stock quantities. All inventory data is saved to a file so nothing is lost between sessions — load, operate, save.
 
-🧠 Concepts Used
-Arrays
-Functions
-File handling (ifstream / ofstream)
-String manipulation
-Case-insensitive search
-Menu-driven programs
-Input validation handling
+---
 
-🛠 Technologies
-C++
-Standard Library (iostream, fstream, iomanip, etc.)
-Runs in terminal/console
-▶ How to Run
-Compile
+## Features
+
+- Add new items or auto-update if item already exists
+- Display full inventory in a formatted table
+- Update item price and quantity
+- Delete items from inventory
+- Run a sale — calculates total bill and reduces stock automatically
+- Data persists via file handling (`inventory.txt`)
+
+---
+
+## Functions
+
+| Function | Purpose |
+|---|---|
+| `loadInventory()` | Loads saved items from file on startup |
+| `saveInventory()` | Writes current inventory back to file |
+| `addItem()` | Adds a new item or updates existing |
+| `displayInventory()` | Renders all items in a table |
+| `updateItem()` | Modifies price or quantity |
+| `deleteItem()` | Removes an item from inventory |
+| `calculateTotalCost()` | Processes a sale and adjusts stock |
+
+---
+
+## Concepts Used
+
+- File I/O (`ifstream` / `ofstream`)
+- Arrays and functions
+- String manipulation and case-insensitive search
+- Menu-driven program structure
+- Input validation
+
+---
+
+## How to Run
+
+**Compile**
+```bash
 g++ grocerystore.cpp -o store
-Execute
-store
+```
 
-📂 Program Structure
-Function	            Purpose
-loadInventory() 	    Loads saved items from file
-saveInventory()	      Saves inventory to file
-addItem()	            Adds or updates an item
-displayInventory()	  Shows all items in table format
-updateItem()	        Changes price/quantity
-deleteItem()	        Removes an item
-calculateTotalCost()	Processes a sale and updates stock
+**Run**
+```bash
+./store
+```
 
-🚀 Program Flow
-Inventory loads from file
-User chooses option from menu
-Operations modify in-memory data
-Inventory saved after changes
+> On Windows use `store.exe` or just `store` in the terminal.
 
-📚 Learning Outcomes
-Through this project, I practiced:
-Managing structured data
-Persistent storage using files
-Designing interactive console applications
-Handling user input safely
-Implementing real-world logic in C++
+---
+
+## Project Structure
+Grocery_store_manager/
+├── grocerystore.cpp       # Main source file
+├── inventory.txt          # Auto-generated data file
+└── README.md
+
+
+---
+
+
+
+
+**Muhammad Arslan Fareed** · [LinkedIn](https://www.linkedin.com/in/muhammadarslanfareed) · [GitHub](https://github.com/rslaanfareed)

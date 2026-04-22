@@ -1,4 +1,0 @@
-3
-Milk 200 40
-apple 20 45
-bread 0 0

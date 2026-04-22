@@ -1,14 +1,14 @@
 # Grocery Store Manager
 
-A console-based grocery store management system built in C++. Handles inventory, billing, and persistent data storage — all from the terminal.
+A console-based grocery store management system built in C++. Handles inventory, billing, and persistent data storage - all from the terminal.
 
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Platform](https://img.shields.io/badge/Platform-Terminal-black?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Complete-00c853?style=for-the-badge)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ---
 
 ## Overview
 
-This project simulates a real grocery store backend. It tracks items, prices, and stock quantities. All inventory data is saved to a file so nothing is lost between sessions — load, operate, save.
+This project simulates a real grocery store backend. It tracks items, prices, and stock quantities. All inventory data is saved to a file so nothing is lost between sessions - load, operate, save.
 
 ---
 
@@ -64,10 +64,14 @@ g++ grocerystore.cpp -o store
 ---
 
 ## Project Structure
+## Project Structure
+
+```
 Grocery_store_manager/
-├── grocerystore.cpp       # Main source file
-├── inventory.txt          # Auto-generated data file
+├── grocerystore.cpp
+├── inventory.txt
 └── README.md
+```
 
 
 ---
